@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #3B304B;
+}
+
+
+main{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+header{
+    background: linear-gradient(rgba(18, 48, 118, 0.8), rgba(18, 48, 118, 0.8)), url(http://static.laverdad.com/images/2017/octubre/31/130021b.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding: 100px;
+}
+
+header h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(163, 163, 163), 1px 1px 8px rgb(163, 163, 163), 1px 1px 10px rgb(163, 163, 163), 1px 1px 15px rgb(163, 163, 163);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    flex-wrap: wrap;
+}
+
+.squares{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.square1,
+.square2,
+.square3,
+.square4,
+.square5,
+.square6{
+    background-color: #6476a6;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+
+
+#content{
+    position: absolute;
+    z-index: 3;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    
+}
+
+#content i{
+    font-size: 80px;
+    transition: all 1s;
+}
+
+.square1:hover #content,
+.square2:hover #content,
+.square3:hover #content,
+.square4:hover #content,
+.square5:hover #content,
+.square6:hover #content{
+    height:70px;
+    width: 70px;
+    position: absolute;
+    transform: translate(0px, 0px);
+    border-radius: 50%;
+}
+
+.square1:hover #content i,
+.square2:hover #content i,
+.square3:hover #content i,
+.square4:hover #content i,
+.square5:hover #content i,
+.square6:hover #content i{
+    font-size: 35px;
+}
+
+#background{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+
+}
+
+#background #text{
+    width: 80%;
+    position: absolute;
+    bottom: 40px;
+    transform: scale(0);
+    transition: all 500ms;
+    transition-delay: 0.2s;
+}
+
+#background #text form input[ type="submit"]{
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+
+
+.square1:hover #background #text,
+.square2:hover #background #text,
+.square3:hover #background #text,
+.square4:hover #background #text,
+.square5:hover #background #text,
+.square6:hover #background #text{
+    transform: scale(1);
+}
+
+.square1 #content{
+    background-color: #44B0FE;
+}
+
+.square2 #content{
+    background-color: #FF7594;
+}
+
+.square3 #content{
+    background-color: #1d8154;
+}
+
+.square4 #content{
+    background-color: #FFB100;
+}
+
+.square5 #content{
+    background-color: #2EAA83;
+}
+
+.square6 #content{
+    background-color: #D86DFF;
+}
+
+
+
+
+
+@media (max-width: 1400px) {
+    .squares{
+        width: 310px;
+        height: 310px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: 200px;
+    display: flex;
+    background-color: #1976D2;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+footer h3, footer h4{
+    padding: 15px;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+
+}
